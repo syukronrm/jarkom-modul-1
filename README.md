@@ -104,7 +104,7 @@ Terdapat dua macam filter yang disediakan oleh Wireshark: __*Capture Filter*__ d
 #### 2.3.1. Capture Filter
 
 ![Capture](/images/ws-capturefilter.JPG)
-
+- Link: https://wiki.wireshark.org/CaptureFilters
 - Definisi: Memilah paket yang akan ditangkap (_captured_). Artinya paket yang tidak memenuhi kriteria dibiarkan lewat tanpa ditangkap.
 - Sintaks filter dapat terdiri dari 1 atau lebih __primitive__. Primitive sendiri biasanya terdiri dari sebuah __id__ (bilangan atau nama) yang didahului oleh 1 atau lebih jenis __qualifier__. Tapi perlu diingat bahwa dalam satu primitive tidak boleh ada 2 qualifier sejenis.
 - Jenis qualifier:
@@ -137,7 +137,9 @@ Terdapat dua macam filter yang disediakan oleh Wireshark: __*Capture Filter*__ d
 
 ![Capture](/images/ws-displayfilter.JPG)
 
+- Link: https://wiki.wireshark.org/DisplayFilters
 - Definisi: Memilah paket yang akan ditampilkan (_displayed_) setelah sebelumnya ditangkap
+- __Display Filter__(seperti `tcp.port == 80`) __bukan Capture Filter__(seperti `tcp port 80`)!
 - Secara umum sintaks display filter terdiri dari `[protocol].[field] [comparison operator] [value]`. Berikut ini daftar __*comparison operator*__ yang tersedia:
 
 	English | Comparison Operator (C-like) | Keterangan
