@@ -55,9 +55,18 @@ Kabel crossover merupakan kabel yang memiliki susunan berbeda antara ujung satu 
 
 ## 2. WIRESHARK
 
+### 2.1 Pendahuluan
+#### 2.1.1 Internet
+Internet /internét/ jaringan komunikasi elektronik yang menghubungkan jaringan komputer dan fasilitas komputer yang terorganisasi di seluruh dunia melalui telepon atau satelit berinternet vmelakukan hubungan melalui jaringan internet. [KBBI]
+
+#### 2.1.2. Protokol
+Protokol adalah standar yang digunakan perangkat untuk berkomunikasi. Contoh protokol adalah: IP, TCP, HTTP, HTTPS, SMTP.
+
+#### 2.1.3. Paket
+
 Sebuah jaringan komputer dibangun dengan tujuan menghubungkan satu end-point dengan end-point lainnya. Tiap kali terjadi komunikasi antar perangkat dalam jaringan pasti melibatkan transaksi data yang dikirim dalam paket-paket jaringan. Struktur paket jaringan terdiri dari:
 
-__1. *Header*__
+#### 2.1.3.1 Header
 
 Bagian header memuat instruksi tentang data yang dibawa oleh paket. Instruksi tsb di antaranya bisa meliputi:
 
@@ -70,17 +79,17 @@ _Protokol_ | Pada jaringan yang membawa lebih dari satu macam informasi, protoko
 _Alamat tujuan_ | Ke mana paket dikirimkan
 _Alamat asal_ | Dari mana paket dikirimkan
 
-__2. *Payload*__
+#### 2.1.3.2. Payload
 
 Payload juga disebut sebagai __*body*__ dari paket. Pada bagian inilah data yang akan dikirimkan lewat paket berada.
 
-__3. *Trailer*__
+#### 2.1.3.3. Trailer
 
 Trailer, kadang-kadang disebut __*footer*__, biasanya memuat sepasang bit yang memberi sinyal pada perangkat penerima bahwa paket sudah mencapai ujungnya. Bisa juga trailer memuat semacam _error checking_.
 
 Nah paket-paket ini ada kalanya menarik untuk dianalisis lebih lanjut. Maka dari itu di sini kita akan dikenalkan dengan salah satu tools untuk analisis paket, yaitu __Wireshark__.
 
-### 2.1. Instalasi
+### 2.2. Instalasi
 
 Instalasi pada OS Windows atau macOS cukup mengunduh installer pada [laman resmi Wireshark](https://www.wireshark.org/download.html) dan menjalankannya. Sedangkan pada OS Linux atau FreeBSD tutorialnya bisa dilihat di [sini](http://linuxtechlab.com/install-wireshark-linux-centosubuntu/).
 
@@ -88,11 +97,11 @@ Setelah melakukan instalasi, jalankan Wireshark sebagai __administrator__ (Windo
 
 ![Capture](/images/ws-landing.JPG)
 
-### 2.2. Filters
+### 2.3. Filters
 
 Terdapat dua macam filter yang disediakan oleh Wireshark: __*Capture Filter*__ dan __*Display Filter*__.
 
-#### 2.2.1. Capture Filter
+#### 2.3.1. Capture Filter
 
 ![Capture](/images/ws-capturefilter.JPG)
 
@@ -124,7 +133,7 @@ Terdapat dua macam filter yang disediakan oleh Wireshark: __*Capture Filter*__ d
 
 > Note: Klik pada paket untuk melihat detilnya
 
-#### 2.2.2. Display Filter
+#### 2.3.2. Display Filter
 
 ![Capture](/images/ws-displayfilter.JPG)
 
@@ -166,7 +175,7 @@ Terdapat dua macam filter yang disediakan oleh Wireshark: __*Capture Filter*__ d
 
 ![ContohDisplay](/images/ws-contohdisplay1.JPG)
 
-### 2.3. Export data hasil packet capture
+### 2.4. Export data hasil packet capture
 
 1. Setelah melakukan packet capturing, pilih pada menu bar File->Export Objects->[Protokol yang diinginkan]. Dalam contoh ini dipilih protokol HTTP.
 
@@ -182,11 +191,11 @@ Terdapat dua macam filter yang disediakan oleh Wireshark: __*Capture Filter*__ d
 
 ![ExportObjects](/images/ws-openimage.JPG)
 
-### 2.4. HTTP basic + digest
+### 2.5. HTTP basic + digest
 
-### 2.5. HTTP request method GET + POST
+### 2.6. HTTP request method GET + POST
 
-### 2.6. FTP
+### 2.7. FTP
 
 ## LATIHAN
 1. Ketika mengakses suatu halaman web, berapakah port yang dituju oleh suatu paket?
