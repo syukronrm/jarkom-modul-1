@@ -60,7 +60,7 @@ Kabel crossover merupakan kabel yang memiliki susunan berbeda antara ujung satu 
 Internet /internét/ jaringan komunikasi elektronik yang menghubungkan jaringan komputer dan fasilitas komputer yang terorganisasi di seluruh dunia melalui telepon atau satelit berinternet vmelakukan hubungan melalui jaringan internet. [KBBI]
 
 #### 2.1.2. Protokol
-Protokol adalah standar yang digunakan perangkat untuk berkomunikasi. Contoh protokol adalah: IP, TCP, HTTP, HTTPS, SMTP.
+Protokol adalah standar yang digunakan perangkat untuk berkomunikasi. Contoh protokol adalah: IP, TCP, HTTP, HTTPS, SMTP. Standar-standar tersebut diatur oleh beberapa [lembaga internasional](https://en.wikipedia.org/wiki/List_of_technical_standard_organisations). Contohnya, standar IPv4 diatur oleh IETF pada dokumen [RTC 791](https://tools.ietf.org/html/rfc791).
 
 #### 2.1.3. Paket
 
@@ -171,7 +171,7 @@ Terdapat dua macam filter yang disediakan oleh Wireshark: __*Capture Filter*__ d
 	------------------|-----------
 	`tcp.port == 25` | Menampilkan semua paket dengan protokol TCP yang menuju ke atau berasal dari port 25
 	`ip.src == 192.168.0.1 \|\| ip.dst == 192.168.0.1` | Menampilkan semua paket yang berasal dari alamat 192.168.0.1 atau menuju ke alamat 192.168.0.1
-	`http.uri contains "its.ac.id"` | Menampilkan semua paket dengan protokol HTTP yang mengandung string "its.ac.id"
+	`http.request.full_uri contains "its.ac.id"` | Menampilkan semua paket dengan protokol HTTP yang mengandung string "its.ac.id"
 
 - Misalkan display filter yang digunakan adalah `http.referer contains "footyroom"`, maka paket yang ditampilkan hanyalah yang [HTTP Referer](https://en.wikipedia.org/wiki/HTTP_referer)-nya mengandung string "footyroom" dan hasilnya kurang lebih sebagai berikut:
 
